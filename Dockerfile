@@ -1,12 +1,13 @@
 
 FROM node:12
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package.json /app
+COPY package*.json ./
+COPY yarn.lock ./
 
 RUN npm install
 
-COPY . /app
+COPY . .
 
 CMD [ "npm", "start" ]

@@ -3,4 +3,3 @@
 .gitignore
 Dockerfile
 README.md
-yarn.lock
