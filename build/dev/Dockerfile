@@ -11,7 +11,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY .. .
+COPY ../.. .
 
 # First, it bypasses the package.json's start command and reduce the number
 # of processes running inside the container. Second it causes exit
