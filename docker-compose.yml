@@ -9,4 +9,4 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./src:/usr/share/nginx/html
+      - ./src:/usr/share/nginx/html:delegated
