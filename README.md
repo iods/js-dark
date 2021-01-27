@@ -8,12 +8,32 @@ Basic Usage
 Development
 -----------
 
+### JSDK Developer (React)
 
-### Vue Applications
+Application can be run from both a Docker environment or Node locally (nvm).
 
-#### Developer (Vue)
+##### Using Node
 
-Application can be run from both a Docker environment or Node locally (NVM).
+```sh
+$ yarn install
+```
+
+```sh
+$ yarn serve
+```
+
+##### Using Docker
+
+```sh
+# uncomment - '8080:3000'
+# uncomment - ./Library/developer-react:/usr/share/nginx/html:delegated
+$ docker-compose up
+```
+
+
+### JSDK Developer (Vue.js)
+
+Application can be run from both a Docker environment or Node locally (nvm).
 
 ##### Using Node
 
