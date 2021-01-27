@@ -9,3 +9,4 @@
 /test/build/
 
 **.eslintcache
+**tailwind.output.css
