@@ -1,0 +1,52 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@font-face {
+  font-family: 'fira_code';
+  src: url('../fonts/firacode/firacode-retina-webfont.woff2') format('woff2'),
+  url('../fonts/firacode/firacode-retina-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+#app {
+  font-family: "fira_code";
+  -moz-osx-font-smoothing: grayscale;
+   -webkit-font-smoothing: antialiased;
+  text-align: center;
+  color: #173f5f;
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #20639b;
+
+    &.router-link-exact-active {
+      color: #3caea3;
+    }
+  }
+}
+
+h1 {
+  color: #ed553b;
+}
+h3 {
+  margin: 40px 0 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #f6d55c;
+}
