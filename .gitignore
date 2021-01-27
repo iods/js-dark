@@ -3,8 +3,8 @@
 # -------------------------------------------------------------------------- #
 
 /.idea/
-/Library/developer-react/node_modules
-/Library/developer-vue/node_modules
+
+**/node_modules
 
 /test/build/
 
