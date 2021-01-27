@@ -3,10 +3,18 @@ version: '3'
 services:
 
   web:
-    image: nginx:1.19
+    image: node:14
     container_name: nginx
 
+    command: >
+      bash -c "yarn install
+      && yarn start"
+
     ports:
-      - '80:80'
+      - '8150:3000'
+
     volumes:
-      - ./src:/usr/share/nginx/html:delegated
+      # - ./Library/dark:/usr/share/nginx/html:delegated
+      - ./Library/developer-react:/usr/share/nginx/html:delegated
+
+    working_dir: /usr/share/nginx/html
