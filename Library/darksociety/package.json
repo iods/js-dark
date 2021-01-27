@@ -1,13 +1,12 @@
 {
-  "name": "webcomponents-starter",
+  "name": "darksociety",
   "version": "0.1.0",
-  "description": "Based on this [vaadin article](https://vaadin.com/learn/tutorials/using-web-components)",
+  "description": "The Dark Society API.",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "serve": "webpack serve",
-    "lint": "eslint --ext .ts, src/ && npx stylelint \"src/**/*.scss\"",
     "clean": "rimraf dist",
     "build": "npm run clean && npm run lint && tsc && sass-to-string && cp ./public/index.html ./dist"
   },
@@ -28,12 +27,5 @@
     "@microsoft/fast-element": "0.21.1",
     "@vaadin/router": "1.7.2",
     "@webcomponents/webcomponentsjs": "2.5.0"
-  },
-  "browserslist": {
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
