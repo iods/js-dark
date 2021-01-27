@@ -17,6 +17,7 @@ services:
     volumes:
       # - ./Library/dark:/usr/share/nginx/html:delegated
       - ./Library/darksociety-cloud:/usr/share/nginx/html:delegated
+      # - ./Library/darksociety:/usr/share/nginx/html:delegated # cant figure this out on docker yet
       # - ./Library/developer-react:/usr/share/nginx/html:delegated
       # - ./Library/developer-vue:/usr/share/nginx/html:delegated
 
