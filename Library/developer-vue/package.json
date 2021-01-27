@@ -1,15 +1,18 @@
 {
   "name": "developer-react",
   "version": "0.1.0",
-  "description": "A developer profile/portfolio site (for myself) built in React (mirror of Vue app).",
+  "description": "A frontend, with lipstick, in Vue.",
   "license": "MIT",
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev"
+  },
   "private": true,
-  "main": "app.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
   },
-  "author": "Rye Miller <rye@drkstr.dev>",
+  "main": "app.js",
   "dependencies": {
     "@coreui/vue": "^3.2.7",
     "vue": "^2.6.12"
@@ -20,17 +23,5 @@
     "node-sass": "^5.0.0",
     "tailwindcss": "^2.0.2",
     "vue-template-compiler": "^2.6.12"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
