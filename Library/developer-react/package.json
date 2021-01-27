@@ -1,0 +1,35 @@
+{
+  "name": "developer-react",
+  "version": "0.1.0",
+  "description": "A developer profile/portfolio site (for myself) built in React (mirror of Vue app).",
+  "license": "MIT",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "serve": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "author": "Rye Miller <rye@drkstr.dev>",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

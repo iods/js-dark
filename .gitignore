@@ -1,7 +1,9 @@
-
 # -------------------------------------------------------------------------- #
 #             .gitignore darkjs - Copyright (c) 2017  Rye Miller             #
 # -------------------------------------------------------------------------- #
 
 /.idea/
+/Library/developer-react/node_modules
+/Library/developer-vue/node_modules
+
 /test/build/

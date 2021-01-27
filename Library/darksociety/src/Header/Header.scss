@@ -1,0 +1,16 @@
+:host {
+  background-color: white;
+  border: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 2rem 3rem;
+
+  a {
+    color: var(--blue-10);
+
+    &:hover {
+      color: var(--blue-5);
+    }
+  }
+}
