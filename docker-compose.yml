@@ -9,15 +9,15 @@ services:
     command: >
       bash -c "yarn install
       && yarn serve"
-#      && yarn start"
 
     ports:
-      # - '8150:3000'
-      - '8150:8080'
+      # - '8080:3000'
+      - '8080:8080'
 
     volumes:
       # - ./Library/dark:/usr/share/nginx/html:delegated
-      - ./Library/developer-vue:/usr/share/nginx/html:delegated
+      - ./Library/darksociety-cloud:/usr/share/nginx/html:delegated
       # - ./Library/developer-react:/usr/share/nginx/html:delegated
+      # - ./Library/developer-vue:/usr/share/nginx/html:delegated
 
     working_dir: /usr/share/nginx/html
