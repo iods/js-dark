@@ -1,12 +1,16 @@
 module.exports = {
-    purge: [],
+    purge: [
+        "./src/**/*.html",
+        "./src/**/*.vue",
+        "./src/**/*.jsx"
+    ],
     theme: {
         extend: {
-            fontSize: {
-                large: '200px'
-            }
+            fontSize: {large: '200px'}
         },
     },
-    variants: {},
-    plugins: [],
+    variants: {
+        extend: {}
+    },
+    plugins: []
 };
