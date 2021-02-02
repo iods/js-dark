@@ -1,21 +1,31 @@
-const express = require('express');
-const app = express();
-const router = express.Router();
+const express = require('express'),
+      path = require('path'),
+      app = express();
 
-const homeRoute = require('./routes/index');
 
-router.get('/home', (req, res) => {
-    res.send('Hey, this is the home router.');
-});
+const apiRoute = require('./routes/api'),
+      chartsRoute = require('./routes/charts'),
+      dashboardsRoute = require('./routes/dashboards'),
+      exampleRoute = require('./routes/examples'),
+      homeRoute = require('./routes/index'),
+      reportsRoute = require('./routes/reports'),
+      statsRoute = require('./routes/stats');
 
-router.get('/basics', (req, res) => {
-    res.send('Hey, some JS basics.');
+
+app.set('view engine', 'pug');
+app.set('views', path.join(__dirname, 'views'));
+
+
+app.use('/', homeRoute);
+app.use('/api', apiRoute);
+app.use('/charts', chartsRoute);
+app.use('/dashboards', dashboardsRoute);
+app.use('/examples', exampleRoute);
+app.use('/tests', homeRoute);
+app.use('/reports', reportsRoute);
+app.use('/stats', statsRoute);
+
+
+app.listen(3000, () => {
+    console.log('listening on 3000')
 })
-
-router.get('/test', (req, res) => {
-    res.send('hey, this is a test.');
-})
-
-app.use('/', homeRoute)
-
-app.listen(8080, function () {})

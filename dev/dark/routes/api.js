@@ -6,14 +6,14 @@ const router = express.Router();
  ES6 Arrow Function
  */
 router.get('/', (req, res) => {
-    res.send('api page, for running reports.');
+    res.render('api/api');
 });
 
 /*
  ES6 Arrow Function
  */
 router.get('/tests', (req, res) => {
-    res.send('api tests page, for running tests.');
+    res.render('api/tests');
 });
 
 
