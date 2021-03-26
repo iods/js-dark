@@ -1,0 +1,29 @@
+{
+  "name": "developer-react",
+  "version": "0.1.0",
+  "description": "A frontend, with lipstick, in Vue. (v2 of Vue)",
+  "license": "MIT",
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev"
+  },
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "main": "app.js",
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2",
+    "vue": "^2.6.12"
+  },
+  "devDependencies": {
+    "@coreui/vue": "^3.2.7",
+    "@vue/cli-service": "^4.5.11",
+    "jquery": "^3.5.1",
+    "node-sass": "^5.0.0",
+    "vue-template-compiler": "^2.6.12"
+  }
+}
