@@ -1,6 +1,15 @@
 Dark JS
 =======
 
+Getting Started
+---------------
+
+1. Basic standard package, hacks
+2. Golf package, slackbot in JS?
+3. strain library
+4. api fun?
+
+
 Basic Usage
 -----------
 

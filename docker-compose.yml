@@ -11,14 +11,10 @@ services:
       && yarn serve"
 
     ports:
-      - '8080:3000'
+      - '3000:3000'
       # - '8080:8080'
 
     volumes:
-      # - ./Library/dark:/usr/share/nginx/html:delegated
-      # - ./Library/darksociety-cloud:/usr/share/nginx/html:delegated
-      # - ./Library/darksociety:/usr/share/nginx/html:delegated # cant figure this out on docker yet
-      - ./Library/developer-react:/usr/share/nginx/html:delegated
-      # - ./Library/developer-vue:/usr/share/nginx/html:delegated
+       - ./dev/darksdk/:/usr/share/nginx/html:delegated
 
     working_dir: /usr/share/nginx/html
