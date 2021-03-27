@@ -6,7 +6,7 @@
 
 **/node_modules
 
-/test/build/
+/test/
 
 **.eslintcache
 **tailwind.output.css
