@@ -1,0 +1,31 @@
+footer {
+    background-color: grey
+}
+
+.lnb h3 {
+    color: white
+}
+
+#resizer {
+    background-color: grey
+}
+
+.main section article h3.subsection-title {
+    color: white
+}
+
+.main section header h2 {
+    border-left-color: grey
+}
+
+.lnb .member-type {
+    color: white;
+}
+
+/*span.icon.green*/
+
+.main section article table td.name, .main section article table td.type {
+    max-width: 300px;
+    min-width: 100px;
+    word-break: normal;
+}

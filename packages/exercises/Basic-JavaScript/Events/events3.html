@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event part-3</title>
+</head>
+<body>
+    <h1>Exploring-Event</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, ab?</p>
+    <p>Expedita laudantium deserunt officiis nisi minima sed quas dolore et.</p>
+    <p>Qui optio corrupti ducimus quibusdam quasi asperiores error quaerat harum.</p>
+    <button>click-me-0</button>
+    <button id="second">click-me-1</button>
+    <button>click-me-2</button>
+    <button id="lastPerson">click-me-3</button>
+
+
+    <script>
+
+        const lastButton = document.getElementById('lastPerson').addEventListener('click',function(){
+            document.body.style.color = 'tomato';
+        })
+
+        // function handleClick() {
+        //     document.body.style.backgroundColor = 'tomato';
+        // }
+
+        // const secondButton = document.getElementById('second');
+        // secondButton.addEventListener('click', handleClick);
+        // secondButton.onclick = handleClick;
+
+    </script>
+</body>
+</html>

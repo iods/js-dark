@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event management Comapany</title>
+</head>
+<body>
+    <h1 onclick="handleClick()">Exploring Events</h1>
+    <button onmouseout="alert(47)">click me-0</button>
+
+    <button id="second">click me-1</button>
+    <button>click me-2</button>
+    <button>click me-3</button>
+
+    <script>
+        function handleClick() {
+            console.log('Someone Clicked Me', new Date);
+        }
+    </script>
+</body>
+</html>

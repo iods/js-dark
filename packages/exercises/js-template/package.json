@@ -1,0 +1,29 @@
+{
+  "name": "js-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "execa": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-plugin-jsdoc": "^31.0.6",
+    "eslint-plugin-mocha": "^8.0.0",
+    "eslint-plugin-old-c-programmer": "^1.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apowers313/js-template.git"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/apowers313/js-template/issues"
+  },
+  "homepage": "https://github.com/apowers313/js-template#readme"
+}
