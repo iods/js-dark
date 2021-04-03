@@ -2,7 +2,8 @@
   "license": "MIT",
   "scripts": {
     "serve": "node index.js",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "yarn serve"
   },
   "dependencies": {
     "express": "^4.17.1",

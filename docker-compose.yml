@@ -1,20 +1,13 @@
 version: '3'
-
 services:
-
-  web:
-    image: node:14
-    container_name: nginx
-
-    command: >
-      bash -c "yarn install
-      && yarn serve"
-
+  node:
+    container_name: node
+    image: dscr/node:14-alpine
     ports:
       - '3000:3000'
-      # - '8080:8080'
 
     volumes:
-       - ./dev/darksdk/:/usr/share/nginx/html:delegated
+       - ./packages/sdk/:/node/app:delegated
+       - ./packages/sdk/node_modules:/node/node_modules:delegated
 
-    working_dir: /usr/share/nginx/html
+    working_dir: /node/app
