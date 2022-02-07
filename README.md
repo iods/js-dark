@@ -20,6 +20,10 @@ Instructions on how to download, install, and configure the module.
 ### Requirements
 
  * [Git](http://git-scm.com)
+ * [HTML5](https://developer.mozilla.org/en-US/docs/Glossary/HTML5)
+ * [CSS3](https://www.css3.info/)
+ * [JavaScript](https://www.javascript.com/)
+ * [JavaScript ES6](http://es6-features.org/)
 
 
 ### Known Issues
