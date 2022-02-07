@@ -1,13 +1,17 @@
 version: '3'
 services:
+
   node:
+    build:
+      dockerfile: .build/docker/react/Dockerfile
+      context: packages/react
     container_name: node
-    image: dscr/node:14-alpine
+    image: node:16-alpine
     ports:
       - '3000:3000'
 
     volumes:
-       - ./packages/sdk/:/node/app:delegated
-       - ./packages/sdk/node_modules:/node/node_modules:delegated
+       - ./packages/react:/usr/src/app:delegated
+       - ./packages/react/node_modules:/usr/src/app/node_modules:delegated
 
-    working_dir: /node/app
+    working_dir: /usr/src/app

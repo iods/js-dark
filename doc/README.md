@@ -4,6 +4,19 @@ Documentation
 Things I find interesting about this language and how to write it.
 
 
+Containerization of Applications
+--------------------------------
+
+We often times talk about the containerization of our backend applications; however, not
+the frontend. It is actually fairly easy to. 
+
+Docker allows us to containerize an application and run it anywhere.
+
+
+docker ps -a is when you cant see it.
+
+
+
 Lexical Structure
 -----------------
 
