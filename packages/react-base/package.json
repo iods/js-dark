@@ -4,7 +4,6 @@
   "description": "A frontend, with lipstick, on React.",
   "license": "MIT",
   "private": true,
-  "main": "app.js",
   "scripts": {
     "build:tw": "tailwind build src/assets/styles/tailwind.css -o src/assets/styles/tailwind.output.css",
     "serve": "yarn run build:tw && react-scripts start",
