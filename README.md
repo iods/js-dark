@@ -1,12 +1,12 @@
 <h1 align="center">Dark JS</h1>
 
-A lightweight, fullstack JavaScript framework for keeping the lights on.
+A lightweight, full-stack JavaScript framework for keeping the lights on.
 
 Facts
 -----
 * Version: 0.1.5
 * [Repository on Github](https://github.com/iods/js-dark)
-* [NPM Package]()
+* [@iods/darkjs npm Package](https://www.npmjs.com/package/@iods/darkjs)
 
 Getting Started
 ---------------
