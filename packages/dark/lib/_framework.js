@@ -1,7 +1,7 @@
 /*
  * DarkJS
  *
- * A lightweight, full-stack JavaScript framework for keeping the lights on.
+ * A lightweight, fullstack JavaScript framework for helping keep the lights on.
  */
 
 const Dark = require ('./dark');

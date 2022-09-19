@@ -4,8 +4,9 @@ A lightweight, fullstack JavaScript framework for keeping the lights on.
 
 Facts
 -----
-* Version: 0.2.0
+* Version: 0.1.5
 * [Repository on Github](https://github.com/iods/js-dark)
+* [NPM Package]()
 
 Getting Started
 ---------------
@@ -13,6 +14,7 @@ Instructions on how to download, install, and configure the framework and includ
 
 ### Installation
 First, clone the Dark JS framework globally.
+
 ```shell
 $ git clone https://github.com/iods/js-dark
 $ cd js-dark
@@ -32,12 +34,10 @@ You are now able to build something.
 
 
 ### Installation
+
 ##### Using Node
 ```sh
-$ yarn install
-```
-```sh
-$ yarn serve
+$ yarn install -g @iods/darkjs
 ```
 
 Built With
@@ -57,13 +57,6 @@ JavaScript
 ```
 Give an example
 ```
-
-## Packagist Setting
-
-- [Create account](https://packagist.org/register/)
-- Connect with Github account
-- [Submit package](https://packagist.org/packages/submit)
-    - URL example: `https://github.com/rangerz/magento2-module-template`
 
 
 ### Tests
