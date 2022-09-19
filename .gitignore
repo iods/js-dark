@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------- #
-#             .gitignore darkjs - Copyright (c) 2017  Rye Miller             #
+#             .gitignore darkjs - Copyright (c) 2022  Rye Miller             #
 # -------------------------------------------------------------------------- #
 *.DS_Store
 /.idea/
@@ -11,5 +11,6 @@
 **.eslintcache
 **tailwind.output.css
 
-
-/dev/exercises
+**npm-debug.log*
+**yarn-debug.log*
+**yarn-error.log*
