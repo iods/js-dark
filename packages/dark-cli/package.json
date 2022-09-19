@@ -1,0 +1,13 @@
+{
+  "name": "@iods/dark-cli",
+  "version": "0.1.0",
+  "description": "A command-line tool for working with Dark.js applications.\n",
+  "repository": "iods/js-dark",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev",
+    "url": "https://ryemiller.io"
+  }
+}
