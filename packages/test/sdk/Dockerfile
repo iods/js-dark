@@ -1,5 +1,5 @@
 # List of commands
-FROM node:16-alpine
+FROM node:17-alpine
 
 WORKDIR /usr/src/app
 
@@ -9,4 +9,6 @@ RUN npm install
 
 COPY . .
 
-CMD ['npm', 'run', 'start']
+EXPOSE ${PORT}
+
+CMD [ "node", "index.js" ]

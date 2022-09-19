@@ -5,9 +5,5 @@
     "dev": "nodemon index.js",
     "start": "yarn serve"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "nodemon": "^2.0.7",
-    "pug": "^3.0.1"
-  }
+  "dependencies": {}
 }
