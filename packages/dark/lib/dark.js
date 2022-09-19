@@ -1,8 +1,9 @@
 /*
  * DarkJS
  *
- * A lightweight, full-stack JavaScript framework for keeping the lights on.
+ * A lightweight, fullstack JavaScript framework for helping keep the lights on.
  */
+
 
 module.exports = exports = {
     version: "0.2.0"
