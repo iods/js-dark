@@ -68,3 +68,10 @@ const page = (
 What are fragment tags?
 
 
+---
+
+
+Why JSX and not JS?
+
+
+
