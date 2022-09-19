@@ -1,54 +1,95 @@
-Dark JS
-=======
+<h1 align="center">Dark JS</h1>
 
-Basic Usage
------------
+A lightweight, fullstack JavaScript framework for keeping the lights on.
+
+Facts
+-----
+* Version: 0.1.5
+* [Repository on Github](https://github.com/iods/js-dark)
+* [NPM Package]()
+
+Getting Started
+---------------
+Instructions on how to download, install, and configure the framework and included packages.
+
+### Installation
+First, clone the Dark JS framework globally.
+
+```shell
+$ git clone https://github.com/iods/js-dark
+$ cd js-dark
+```
+You are now able to build something.
+
+### Requirements
+ * [Git](http://git-scm.com)
+ * [JavaScript](https://www.javascript.com/)
+ * [JavaScript ES6](http://es6-features.org/)
 
 
-Development
------------
+### Known Issues
+ * [#2 Cleanup and Organize Environment](https://github.com/iods/js-dark/issues/2)
+ * [#3 Research and Experiment w/ Environment Defaults](https://github.com/iods/js-dark/issues/3)
+ * [#4 Setup Build Scripts and Configure CI for npm](https://github.com/iods/js-dark/issues/4)
 
-### JSDK Developer (React)
 
-Application can be run from both a Docker environment or Node locally (nvm).
+### Installation
 
 ##### Using Node
-
 ```sh
-$ yarn install
+$ yarn install -g @iods/darkjs
 ```
 
-```sh
-$ yarn serve
+Built With
+----------
+* [DarkJS](https://github.com/iods/js-dark) - A Platform Love Affair
+
+
+JavaScript
+-----------
+
+### Components
+@TODO
+
+### Extensions
+@TODO
+
+```
+Give an example
 ```
 
-##### Using Docker
 
-```sh
-# uncomment - '8080:3000'
-# uncomment - ./Library/developer-react:/usr/share/nginx/html:delegated
-$ docker-compose up
-```
+### Tests
+@TODO series of step by step tests
 
 
-### JSDK Developer (Vue.js)
+### Code Styles
+@TODO relevant code style information or documentation.
 
-Application can be run from both a Docker environment or Node locally (nvm).
 
-##### Using Node
+Support
+-------
+If you have any issues with this project, open an issue on [Github](https://github.com/iods/js-dark/issues)
 
-```sh
-$ yarn install
-```
 
-```sh
-$ yarn serve
-```
+Developer
+---------
+ * **Rye Miller** - *Initial work* - [GitHub](http://github.com/iods/), [Homepage](https://ryemiller.io)
 
-##### Using Docker
+See also the list of [contributors](https://github.com/iods/js-dark/contributors) who participated in this project.
 
-```sh
-# uncomment - '8080:8080'
-# uncomment - ./Library/developer-vue:/usr/share/nginx/html:delegated
-$ docker-compose up
-```
+
+Versioning
+----------
+For transparency into the release cycle and in striving to maintain backward compatibility, this project is
+maintained under [the Semantic Versioning guidelines](http://semver.org/).
+
+
+License
+-------
+This project/code is released under [the MIT license](https://github.com/iods/js-dark/LICENSE).
+
+
+Copyright
+---------
+(c) 2020-2022 Rye Miller. All Rights Reserved.
