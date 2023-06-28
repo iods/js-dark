@@ -1,3 +1,7 @@
+/*
+ * DarkJSDK
+ * A Tour of Arrays
+ */
 
 // Using the pop() method will remove the last element of an array
 

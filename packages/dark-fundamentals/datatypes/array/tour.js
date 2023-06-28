@@ -6,9 +6,9 @@
 // JavaScript supports arrays, numerically indexed lists of values:
 
 let primes = [2, 3, 5, 7];      // An array of four values, delimited with [ and ]
-primes[0]                       // output: 2, the first element (index 0) of the array
+let v = primes[0]               // output: 2, the first element (index 0) of the array
 primes.length                   // output: 4, the length of elements in the array
-primes[primes.length-1]         // output: 7, the last element in the array
+let l = primes[primes.length-1] // output: 7, the last element in the array
 primes[4] = 9                   // Add a new element assignment to the array [2, 3, 5, 7, 9]
 primes[4] = 11                  // Alter the existing element [2, 3, 5, 7, 11]
 let empty = []                  // sets an empty array with no elements

@@ -16,9 +16,18 @@
         <title>Dark JS & Acuity UI</title>
     </head>
 <body>
-    <div id="app">
-        <h1>Hello World</h1>
+    <div align="center">
+        <div id="demo"></div>
     </div>
-    <script src="array.js"></script>
+
+    <script>
+        const numbers = [10, 20, 30, 40, 50];
+
+        let found = numbers.find(function (value) {
+            return value > 20;
+        })
+
+        document.getElementById("demo").innerHTML = found;
+    </script>
 </body>
 </html>
