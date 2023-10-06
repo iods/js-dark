@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');
+/*!
+ * DarkJSDK (0.2.0)
+ * https//github.com/iods/js-dark
+ * Copyright (c) 2017-Present, Rye Miller
+ */
+
+:root {
+  --color-primary: #508CA4;
+  --color-secondary: #2D8A7C;
+  --color-tertiary: #719DB3;
+  --color-info: #004F2D;
+  --color-success: #0A8754;
+  --color-light: #BFD7EA;
+  --color-gray: #91AEC1;
+  --font-family-sans-serif: 'Fira Code', monospace;
+}
+
+
+body {
+  background-color: #090C20;
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

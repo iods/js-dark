@@ -2,6 +2,8 @@
 
 A lightweight, full-stack JavaScript framework for keeping the lights on.
 
+Goal: Write elegant, fast, and ubiquitous Javascript.
+
 Facts
 -----
 * Version: 0.1.5
@@ -85,6 +87,12 @@ For transparency into the release cycle and in striving to maintain backward com
 maintained under [the Semantic Versioning guidelines](http://semver.org/).
 
 
+Acknowledgements
+----------------
+
+* **John Resig** & **Bear Bibeault**, writers of [**Secrets of the Javascript Ninja**]()
+
+
 License
 -------
 This project/code is released under [the MIT license](https://github.com/iods/js-dark/LICENSE).
@@ -92,4 +100,4 @@ This project/code is released under [the MIT license](https://github.com/iods/js
 
 Copyright
 ---------
-(c) 2020-2022 Rye Miller. All Rights Reserved.
+(c) 2017-Present Rye Miller. All Rights Reserved.

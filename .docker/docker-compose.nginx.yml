@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  app:
+    container_name: dark-js
+    restart: always
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '8150:80'
+    volumes:
+      - ./public:/usr/share/nginx/html

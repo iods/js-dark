@@ -1,5 +1,9 @@
+/.idea/
 /node_modules/
+/doc/
 .dockerignore
 .gitignore
+docker-compose.yml
 Dockerfile
 README.md
+npm-debug.log
