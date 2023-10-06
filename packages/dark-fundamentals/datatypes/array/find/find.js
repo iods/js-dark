@@ -1,7 +1,9 @@
-/*
- * DarkJSDK
- * A Tour of Arrays
+/**
+ * @fileoverview Using Arrays in the DarkJSDK
+ * Using the find() method to search an Array
+ * @package
  */
+
 
 const numbers = [10, 20, 30, 40, 50];
 

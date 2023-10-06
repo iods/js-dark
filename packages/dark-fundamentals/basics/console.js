@@ -1,6 +1,6 @@
 /*
  * DarkJSDK
- * A Tour of the console.
+ * A tour of the console for Javascript
  */
 
 // The console.log method is used to print/log output to the console

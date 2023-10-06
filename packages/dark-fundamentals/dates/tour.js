@@ -20,6 +20,8 @@ dateThree.toISOString();
 
 const dateFour = new Date(2012, 11, 12, 16, 45, 40);
 
+console.log(dateOne.getUTCDay());
+
 console.log(dateOne);
 console.log(dateTwo);
 console.log(dateThree);

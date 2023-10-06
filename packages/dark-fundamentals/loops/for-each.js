@@ -6,6 +6,8 @@
 
 const characters = ['Dwight Schrute', 'Jim Halpert', 'Kevin Malone'];
 
-characters.forEach(function (character) {
-    console.log(character);
-})
+// characters.forEach(function (character) {
+//     console.log(character);
+// })
+
+characters.forEach(character => console.log(character));

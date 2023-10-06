@@ -1,9 +1,8 @@
-/*
- * DarkJSDK
- * A Tour of Arrays
+/**
+ * @fileoverview Arrays in the DarkJSDK
+ * Using the push() method new items are added to the end of an array
+ * @package
  */
-
-// Using the push() method new items are added to the end of an array
 
 const users = ['Michael', 'Dwight', 'Jim', 'Kevin'];
 users.push('Creed');

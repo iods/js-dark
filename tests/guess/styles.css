@@ -1,0 +1,107 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;600&display=swap');
+/*!
+ * DarkJSDK (0.2.0)
+ * https//github.com/iods/js-dark
+ * Copyright (c) 2017-Present, Rye Miller
+ */
+
+:root {
+  --color-primary: #508CA4;
+  --color-secondary: #2D8A7C;
+  --color-tertiary: #719DB3;
+  --color-info: #004F2D;
+  --color-success: #0A8754;
+  --color-light: #BFD7EA;
+  --color-gray: #91AEC1;
+  --font-family-sans-serif: 'Fira Code', monospace;
+}
+
+
+body {
+  background-color: #090C20;
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+button {
+  border: none;
+  background-color: #FCFCFC;
+  color: #090C20;
+  font-family: 'Fira Code', monospace;
+  font-size: inherit;
+  font-weight: 600;
+  height: 100%;
+  letter-spacing: 1px;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+}
+
+button:hover {
+  color: #FCFCFC;
+  background-color: #256EFF;
+}
+
+h1, .h1 {
+  color: #FCFCFC;
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.header {
+  background-color: #256EFF;
+  margin: 0;
+  padding-bottom: 25px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+#color-container {
+  margin: 40px auto;
+  max-width: 600px;
+}
+
+#color-match {
+  color: #FCFCFC;
+  font-size: 4.5rem;
+  font-weight: 300;
+}
+
+#message {
+  display: inline-block;
+  width: 20%;
+}
+
+.selected {
+  background-color: #256EFF;
+  color: #FCFCFC;
+}
+
+#stripe {
+  background-color: #FCFCFC;
+  color: #090C20;
+  height: 40px;
+  text-align: center;
+}
+
+.square {
+  background-color: #FF495C;
+  border-radius: 10%;
+  float: left;
+  margin: 1.66%;
+  padding-bottom: 30%;
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+          transition: background 0.6s;
+  width: 30%;
+}

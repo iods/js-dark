@@ -25,3 +25,22 @@ let data = {                    // An object with two properties
     point1: [[1, 2], [3, 4]],   // the value of each property is an array
     point2: [[2, 3], [4, 5]]    // the elements of each array, are an array
 }
+
+// push() end
+// unshift() beginning
+// splice() middle
+
+// map
+const numbers = [1, 3, -6, 4];
+
+// value
+// index
+// array
+
+const filtered = numbers.filter(value => value >= 0);
+
+const items = filtered.map(value => '<li>' + value + '</li>');
+
+const html = '<ul>' + items.join('') + '</ul>';
+
+console.log(html);
