@@ -1,0 +1,23 @@
+#
+# Makefile for the Dark SDK for JavaScript
+# @version 0.1.5 [2023-10-06]
+# http://github.com/iods/js-dark
+# Author: Rye Miller <rye@drkstr.dev>
+# Copyright (c) 2023, Rye Miller
+#
+SHELL := /bin/bash
+
+docker/build:
+	@docker compose build --no-cache --force-rm
+
+docker/build-dev:
+	@docker compose -f docker-compose.dev.yml build --no-cache --force-rm
+
+docker/up:
+	@docker compose up -d
+
+docker/up-dev:
+	@docker compose -f docker-compose.dev.yml up -d
+
+docker/down:
+	@docker compose down --rmi all --volumes --remove-orphans

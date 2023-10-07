@@ -1,0 +1,19 @@
+#
+# The Dark Society Cloud
+#
+
+FROM node:alpine
+
+LABEL maintainer="Rye Miller" \
+      vendor="The Dark Society <containers@darksociety.cloud>" \
+      version="0.1.0"
+
+WORKDIR /usr/src/app
+
+COPY package*.json .
+COPY yarn.lock .
+RUN npm install --silent
+
+COPY . .
+
+CMD ["npm", "run", "start"]
