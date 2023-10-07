@@ -1,0 +1,9 @@
+services:
+  app:
+    container_name: js-dark
+    restart: always
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile.dev
+    ports:
+      - '8150:3000'

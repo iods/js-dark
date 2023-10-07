@@ -15,13 +15,20 @@ Getting Started
 Instructions on how to download, install, and configure the framework and included packages.
 
 ### Installation
+
+msg: "Welcome to the Dark Society Cloud. A Go, Python, and NodeJS API platform.",
+
 First, clone the Dark JS framework globally.
 
 ```shell
-$ git clone https://github.com/iods/js-dark
-$ cd js-dark
+ $ git clone https://github.com/iods/js-dark
+ $ cd js-dark
+ $ make docker/build
+ $ make docker/up
 ```
-You are now able to build something.
+
+Navigate to [http://localhost:8150](http://localhost:8150)
+
 
 ### Requirements
  * [Git](http://git-scm.com)
