@@ -23,11 +23,28 @@ First, clone the Dark JS framework globally.
 ```shell
  $ git clone https://github.com/iods/js-dark
  $ cd js-dark
- $ make docker/build
- $ make docker/up
+ $ make
+ $ make up
+ $ make down
 ```
 
 Navigate to [http://localhost:8150](http://localhost:8150)
+
+#### For Development
+
+```shell
+ $ make dev
+ $ make dev-up
+ $ make down
+```
+
+#### For Vanilla Testing
+
+```shell
+ $ make
+ $ make up
+ $ make down
+```
 
 
 ### Requirements
