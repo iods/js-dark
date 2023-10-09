@@ -41,8 +41,8 @@ Navigate to [http://localhost:8150](http://localhost:8150)
 #### For Vanilla Testing
 
 ```shell
- $ make
- $ make up
+ $ make test
+ $ make test-up
  $ make down
 ```
 
