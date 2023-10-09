@@ -1,0 +1,16 @@
+#
+# The Dark Society Cloud
+#
+
+FROM nginx:alpine
+
+LABEL maintainer="Rye Miller" \
+      vendor="The Dark Society <containers@darksociety.cloud>" \
+      version="0.1.0"
+
+RUN rm /etc/nginx/conf.d/default.conf
+ADD ./.docker/etc/default.conf /etc/nginx/conf.d/
+
+EXPOSE 80
+
+COPY ./public/ /usr/share/nginx/html/

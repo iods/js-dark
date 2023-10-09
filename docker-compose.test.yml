@@ -6,6 +6,6 @@ services:
     restart: always
     build:
       context: .
-      dockerfile: .docker/Dockerfile.dev
+      dockerfile: .docker/Dockerfile.test
     ports:
-      - '8150:3000'
+      - '8150:80'
