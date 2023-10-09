@@ -5,8 +5,8 @@ import './footer.css';
 const Footer = () => {
 
   return (
-    <footer>
-      <div>
+    <footer className="w-full bg-gray-800">
+      <div className="items-center">
         <p>
           This is a personal project of The Dark Society.
         </p>
