@@ -7,14 +7,34 @@
 #
 # @TODO:
 #   - one thing
-#   - two thing
-#   - three thing
-SHELL := /bin/bash
+#   - two things
+#   - three things
+
+SHELL   := /bin/bash
+PROJECT := js-dark
+VERSION := 0.1.5
+ROOT    := $(shell pwd)
+SRC     := $(dir $(lastword $(MAKEFILE_LIST)))
+
 -include tasks/Makefile.*
 
-# SHELL   := /bin/bash
-# PROJECT := js-dark
-# VERSION := 0.1.5
-# ROOT    := $(shell pwd)
-# SRC     := $(dir $(lastword $(MAKEFILE_LIST)))
-# DC      := docker-compose
+build:
+	make docker/build
+
+up:
+	make docker/up
+
+dev:
+	make docker/build-dev
+
+dev-up:
+	make docker/up-dev
+
+down:
+	make docker/down
+
+test:
+	make docker/build-test
+
+test-up:
+	make docker/up-test

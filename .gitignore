@@ -1,16 +1,29 @@
 # -------------------------------------------------------------------------- #
-#             .gitignore darkjs - Copyright (c) 2022  Rye Miller             #
+#        .gitignore darkjs - Copyright (c) 2017 - Present  Rye Miller        #
 # -------------------------------------------------------------------------- #
 *.DS_Store
-/.idea/
+/.idea
 
 **/node_modules
-
+/.pnp
+.pnp.js
 /packages/js*
-/test/
+/test
 
 **.eslintcache
 **tailwind.output.css
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 **npm-debug.log*
 **yarn-debug.log*
