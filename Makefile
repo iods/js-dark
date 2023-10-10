@@ -25,16 +25,22 @@ up:
 	make docker/up
 
 dev:
+	make docker/build-dev && make docker/up-dev
+
+dev/build:
 	make docker/build-dev
 
-dev-up:
+dev/up:
 	make docker/up-dev
+
+test:
+	make docker/build-test && make docker/up-test
+
+test/build:
+	make docker/build-test
+
+test/up:
+	make docker/up-test
 
 down:
 	make docker/down
-
-test:
-	make docker/build-test
-
-test-up:
-	make docker/up-test
