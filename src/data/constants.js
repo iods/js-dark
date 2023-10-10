@@ -1,2 +1,6 @@
 
-export const title = 'This is a test of the Emergency Broadcast System.';
+export const one = 'one';
+
+export const two = 'two';
+
+export const three = 'three';
