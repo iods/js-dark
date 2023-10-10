@@ -1,4 +1,4 @@
-import react from 'react';
+import React from "react";
 import './header.css';
 import { one, two, three } from '../../data/constants.js';
 
