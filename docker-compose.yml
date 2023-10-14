@@ -6,11 +6,12 @@ services:
     restart: always
     environment:
       - TEST_ARGUMENT=true
+      - NODE_ENV=production
     build:
       context: .
       dockerfile: .docker/Dockerfile
     ports:
       - '8150:80'
     volumes:
-      - /usr/src/app/node_modules
-      - .:/app
+      - '/usr/src/app/node_modules'
+      - '.:/usr/src/app'
