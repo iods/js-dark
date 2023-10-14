@@ -13,16 +13,13 @@
 SHELL   := /bin/bash
 PROJECT := js-dark
 VERSION := 0.1.5
-ROOT    := $(shell pwd)
-SRC     := $(dir $(lastword $(MAKEFILE_LIST)))
+
 
 -include tasks/Makefile.*
 
-build:
-	make docker/build
 
-up:
-	make docker/up
+.DEFAULT_GOAL := all
+
 
 dev:
 	make docker/build-dev && make docker/up-dev
@@ -30,8 +27,8 @@ dev:
 dev/build:
 	make docker/build-dev
 
-dev/up:
-	make docker/up-dev
+build:
+	make docker/build
 
 test:
 	make docker/build-test && make docker/up-test
@@ -39,8 +36,38 @@ test:
 test/build:
 	make docker/build-test
 
+
+stats:
+	@docker stats $(docker ps --format='{{.Names}}')
+
+
+help:
+	@echo "Please use \`make <target>' where <target> is one of"
+	@echo "  clean       removes all stopped containers."
+	@echo "  dev         to both build and run a React development environment."
+	@echo "  dev/build   builds a React development environment."
+	@echo "  dev/up      to run a React development environment."
+	@echo "  down        removes the currently running images and volumes."
+	@echo "  test        to both build and run a vanilla javascript instance."
+	@echo "  test/build  builds a vanilla javascript instance."
+	@echo "  test/up     to run a vanilla javascript instance."
+	@echo "  uninstall   removes all images, containers, and networks."
+
+
+up:
+	make docker/up
+
+dev/up:
+	make docker/up-dev
+
 test/up:
 	make docker/up-test
 
 down:
 	make docker/down
+
+clean:
+	make docker/remove
+
+uninstall:
+	make docker/prune

@@ -4,6 +4,9 @@ services:
   app:
     container_name: js-dark
     restart: always
+    environment:
+      - TEST_ARGUMENT=true
+      - NODE_ENV=development
     build:
       context: .
       dockerfile: .docker/Dockerfile.dev
