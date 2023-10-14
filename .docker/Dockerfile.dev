@@ -8,12 +8,19 @@ LABEL maintainer="Rye Miller" \
       vendor="The Dark Society <containers@darksociety.cloud>" \
       version="0.1.0"
 
+# ENV PATH /usr/src/app/node_modules/.bin:$PATH
+ENV NODE_ENV development
+
+# creates the application directory
+# RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# install the application dependencies
 COPY package*.json .
 COPY yarn.lock .
 RUN npm install --silent
 
+# copy the application source
 COPY . .
 
 CMD ["npm", "run", "start"]
