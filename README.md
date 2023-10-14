@@ -1,6 +1,6 @@
 <h1 align="center">Dark JS</h1>
 
-A lightweight, full-stack JavaScript framework for keeping the lights on.
+A lightweight, full-stack JavaScript framework and documentation library on learning to keep the lights on.
 
 Goal: Write elegant, fast, and ubiquitous Javascript.
 
@@ -45,6 +45,32 @@ Navigate to [http://localhost:8150](http://localhost:8150)
  $ make test-up
  $ make down
 ```
+
+
+
+
+
+
+**Local Shell [Default]**
+* `$ docker compose build`
+* `$ docker compose up -d`
+
+**Local Shell [Development]**
+* `$ docker compose -f docker-compose.dev.yml build`
+* `$ docker compose -f docker-compose.dev.yml up -d`
+
+
+### Alternative
+
+**Using Make [Default]**
+* `$ make docker/build`
+* `$ make docker/up`
+* `$ make docker/down`
+
+**Using Make [Development]**
+* `$ make docker/build-dev`
+* `$ make docker/up-dev`
+* `$ make docker/down`
 
 
 ### Requirements
