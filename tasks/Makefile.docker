@@ -5,7 +5,10 @@
 # Author: Rye Miller <rye@drkstr.dev>
 # Copyright (c) 2023, Rye Miller
 #
-SHELL := /bin/bash
+
+SHELL           := /bin/bash
+.DEFAULT_TARGET := default
+remove          := $(docker rm $(docker ps -a -q))
 
 docker/build:
 	@docker compose build --no-cache --force-rm
@@ -27,3 +30,18 @@ docker/up-test:
 
 docker/down:
 	@docker compose down --rmi all --volumes --remove-orphans
+
+docker/remove:
+	$(remove)
+
+docker/prune:
+	@docker system prune
+
+default: all
+
+.PHONY: all
+all:
+	@docker compose build --no-cache --force-rm && docker compose up -d
+	@echo
+	@echo "The React Environment has finished."
+	@echo
