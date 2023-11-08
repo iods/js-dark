@@ -8,7 +8,7 @@
 /.pnp
 .pnp.js
 /packages/js*
-/test
+/tests
 
 **.eslintcache
 **tailwind.output.css

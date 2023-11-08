@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DOM | Creating New Elements</title>
+     <style>
+          .parent .day{
+               padding: 10px;
+          }
+     </style>
+</head>
+<body style="background-color: #212121; color: #fff;">
+     <div class="parent" >
+          <div class="day">Monday</div>
+          <div class="day">Tuesday</div>
+          <div class="day">Wednesday</div>
+          <div class="day">Thursday</div>
+     </div>
+</body>
+<script>
+     let parent = document.querySelector('.parent')
+     console.log(parent.children);
+
+     for (let i = 0; i < parent.children.length; i++) {
+          const element = parent.children[i];
+          // console.log(element.innerHTML);
+          /*Monday
+           Tuesday
+           Wednesday
+           Thursday*/
+     }
+
+     parent.children[0].style.color = 'orange'
+     // console.log(parent.firstElementChild);
+
+     let parentNode = document.querySelector('.day')
+     // console.log(parentNode.parentElement);
+     // console.log(parentNode.firstChild);
+     // console.log(parentNode.lastChild);
+
+
+     // console.log(parent.childNodes);
+</script>
+</html>

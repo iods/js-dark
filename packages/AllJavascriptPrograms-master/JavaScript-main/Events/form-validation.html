@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation Using JavaScript events</title>
+    <style>
+        .loginForm{
+            position: relative;
+        }
+        .form{    
+            position: absolute;
+            background-color: rgb(126, 182, 182);
+            width: 250px;
+            border-radius: 20px;
+            padding: 50px 80px;
+            padding-left: 90px;
+            left: 600px;
+            top: 150px;
+            display: none;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 2px solid black;
+            width: 235px;
+        }
+        span{
+            color: red;
+        }
+        #selectMe{
+            margin: -110px;
+        }
+        label{
+            margin-bottom: 10px;
+        }
+        .passTag, .rem{
+            margin-top: 15px;
+        }
+        button{
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 20px;
+            width: 235px;
+            border: 2px solid black;
+            background-color: rgb(175, 175, 255);
+        }
+        h2{
+            text-align: center;
+        }
+        #passed, #mailed{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="loginForm">
+        <button id="signInBtn">SignIn</button>
+        <div class="form" id="formValue">
+            <form action="#">
+                <h2>Login Form</h2>
+                <label for="Email">Email Address<span>*</span></label><br>
+                <input type="email" name="Email" id="Email" placeholder="Enter your email"><br>
+                <span id="mailed">*This field is required</span><br>
+
+                <div class="passTag">
+                    <label for="pass">Password<span>*</span></label><br>
+                </div>
+                <input type="password" name="pass" id="pass" placeholder="Enter your password"><br>
+                <span id="passed">*This field is required</span><br>
+
+                <div class="rem">
+                    <input type="checkbox" name="selectMe" id="selectMe">
+                    <label for="selectMe">Remember me</label><br>
+                </div>
+
+                <button id="loginBtn">Login</button>
+            </form>
+        </div>
+    </div>
+    <script src="./form-validation.js"></script>
+</body>
+</html>

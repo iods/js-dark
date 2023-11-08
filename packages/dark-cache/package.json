@@ -1,0 +1,16 @@
+{
+  "name": "@iods/darkjs",
+  "version": "0.1.5",
+  "description": "A lightweight, full-stack JavaScript framework for keeping the lights on.",
+  "repository": "iods/js-dark",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev",
+    "url": "https://ryemiller.io"
+  },
+  "devDependencies": {
+    "@iods/dark-cli": "^0.1.0"
+  }
+}

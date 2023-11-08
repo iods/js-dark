@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrayb Methods in JS</title>
+</head>
+
+<body>
+    <script>
+        const array1 = [5, 12, 8, 130, 44];
+        const array2 = ['a', 'b', 'c'];
+        const array3 = ['d', 'e', 'f'];
+
+        console.log("Array Methods");
+        console.log("at method -> " + array1.at(3));
+
+        console.log("concat method -> ");
+        let arr4 = array2.concat(array3);
+        console.log(arr4);
+
+        console.log("Fill Method ->")
+        console.log(array1.fill(0, 2, 4)); //Fill with 0 from position 2 until position 4
+        console.log(array1.fill(5, 1)); // Fill with 5 from position 1
+        console.log(array1.fill(6)); // Fill with 6 throughout
+
+        console.log("include method ->");
+        console.log(array1.includes(2));
+
+        console.log("indexOf method ->");
+        console.log(array2.indexOf('b'));
+
+        console.log("push method ->");
+        console.log(array2.push("g", "h"));
+        console.log(array2);
+
+        console.log("pop method ->");
+        console.log(array2.pop());
+        console.log(array2);
+
+        console.log("unshift method ->");
+        console.log(array3.unshift("g", "h"));
+        console.log(array3);
+
+        console.log("shift method ->");
+        console.log(array3.shift());
+        console.log(array3);
+
+        console.log("slice method ->");
+        const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
+        console.log(animals.slice(2)); // Expected output: Array ["camel", "duck", "elephant"]
+        console.log(animals.slice(2, 4)); // Expected output: Array ["camel", "duck"]
+        console.log(animals.slice(1, 5)); // Expected output: Array ["bison", "camel", "duck", "elephant"]
+        console.log(animals.slice(-2)); // Expected output: Array ["duck", "elephant"]
+        console.log(animals.slice(2, -1)); // Expected output: Array ["camel", "duck"]
+        console.log(animals.slice()); // Expected output: Array ["ant", "bison", "camel", "duck", "elephant"]
+
+
+        console.log("splice method ->");
+        const months = ['Jan', 'March', 'April', 'June'];
+        months.splice(1, 0, 'Feb'); // Inserts at index 1
+        console.log(months); // Expected output: Array ["Jan", "Feb", "March", "April", "June"]
+        months.splice(4, 1, 'May'); // Replaces 1 element at index 4
+        console.log(months); // Expected output: Array ["Jan", "Feb", "March", "April", "May"]
+
+        console.log("Sort method ->");
+        const month = ['March', 'Jan', 'Feb', 'Dec'];
+        month.sort();
+        console.log(month); // Expected output: Array ["Dec", "Feb", "Jan", "March"]
+        const array4 = [1, 30, 4, 21, 100000]
+        array4.sort();
+        console.log(array4); // Expected output: Array [1, 100000, 21, 30, 4]
+
+        console.log("reverse method ->");
+        console.log(array4.reverse());
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

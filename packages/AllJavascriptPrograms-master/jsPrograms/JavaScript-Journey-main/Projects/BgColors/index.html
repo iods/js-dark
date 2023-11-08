@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Multi-Color</title>
+     <style>
+          body{
+               background-color: #212121;
+          }
+          .main-Div{
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               flex-direction: column;
+               gap: 20px;
+               font-family: cursive;
+          }
+          .main-Div h3{
+               font-size: 50px;
+               font-weight: 400;
+               /* font-family: cursive; */
+          }
+          .main-Div .submitBtn{
+               padding: 10px;
+               font-size: 20px;
+               border: 2px solid black;
+               border-radius: 10px;
+               cursor: pointer;
+          }
+     </style>
+</head>
+<body>
+     <div class="main-Div">
+          <h3>Start => Changes Bg Color <br> 
+               Stop => Stops the changing
+          </h3>
+          <button class="submitBtn" id="start">Start</button>
+          <button class="submitBtn" id="stop">Stop</button>
+          <!-- <div class="color">
+               <h4>Your Color After You Stoping : <span id="lastColor"></span> </h4>
+          </div> -->
+     </div>
+</body>
+<script src="colors.js"></script>
+</html>

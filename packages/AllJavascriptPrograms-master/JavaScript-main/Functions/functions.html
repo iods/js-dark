@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in JS</title>
+</head>
+
+<body>
+    <script>
+        /*
+        Function :- 
+            - A javascrip function is a block of code which designed to perform a perticular task
+            - Functions are the block of code that can be defined and called at any point of time
+        */
+
+        // Function without paramater
+        function welcomeFunc() {
+            console.log("Welcome to the javacript functions");
+        }
+
+
+        // Function with paramater
+        function paraFunc(x) {
+            let factorial = 1;
+            for (let i = 1; i <= x; i++) {
+                factorial *= i;
+            }
+            console.log(factorial);
+        }
+
+
+        // Function with return statement
+        // Return statement will not print the data in console tab directly it write the value, while console will print the value directly
+        function returnFunc(x) {
+            let factorial = 1;
+            for (let i = 1; i <= x; i++) {
+                factorial *= i;
+            }
+            return factorial;
+        }
+
+
+        // Function with default/initialized paramater
+        function defaultFunc(x, y = 10) {
+            console.log((x * y) / 2);
+        }
+
+        // Anonymous function :- It is a function which is defined without name. but we cannot create anonymous function directly, for that we need to create anonymous function inside other function as a parameter.
+        setTimeout(function () {
+            console.log("printSomething");
+        }, 1000);
+
+
+        // variable function :- Variable function is a  function which is assigned to a variable.
+        const add = function func(a, b) {
+            return a * b;
+        }
+        console.log(add(3, 2));
+
+        // callback function :- It is a function that is called as an argument to another function and it is executed inside that function only
+        function myFunc(parafunction) {
+            console.log("Hello All ");
+            parafunction();
+        }
+        function paraFun() {
+            console.log("welcome to AIT");
+        }
+        myFunc(paraFun);
+
+
+        // Nested function :- nested function are refers to function that are defined inside other function.
+        function funcOne(a, b) {
+            var c = a * b;
+            function funcTwo() {
+                var d = a + b;
+                console.log(c * 3);
+                console.log(d);
+            }
+            // console.log(d);
+            console.log(c);
+            funcTwo();
+        }
+        funcOne(3, 3);
+
+        // Recursive Function :- It is a function who call itself unless it hit the base condition/case.
+        function recursiveFunc(n) {
+            if (n === 0 || n===1) {
+                return 1;
+            }
+            return n * recursiveFunc(n - 1);
+
+        }
+
+        console.log(recursiveFunc(10));
+
+        // IIFE (Immediately Invoked Function Expression) :- 
+        (function fun(x,y){
+            console.log("This is printed ") 
+            console.log(x*y);
+        })(5,6);
+
+        // Arrow Function :- Arrow functions were introduced in ES6. Arrow functions allow us to write shorter function syntax:
+        const arrowFunc=(a,b)=>{
+            return a+b;
+        }
+
+        console.log(arrowFunc(3,9));
+        
+
+
+
+
+
+
+
+        // Calling/Invoking the functions the functions
+        // welcomeFunc();  // function without parameters
+        // paraFunc(5);    // function with parameters
+
+        // let output1 = returnFunc(6);    // function with return statement
+        // console.log(output1);
+
+        // defaultFunc(10);    // function with default/initialized paramater -> ouput=50
+        // defaultFunc(10,20);    // function with default/initialized paramater -> output=100
+
+
+
+
+    </script>
+</body>
+
+</html>

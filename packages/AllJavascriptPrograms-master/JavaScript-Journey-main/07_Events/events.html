@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>HTML EVENTS</title>
+     <style>
+          body{
+               background-color: black;
+               color: aliceblue;
+          }
+     </style>
+</head>
+<body>
+<h2>Amazing image</h2>
+    <div >
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="river" src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><img width="200px" id="owl" src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+   </div>
+</body>
+<script>
+     let owl = document.getElementById('owl')
+     // Old Approch
+     // owl.onclick = function(){
+     //      alert('Owl')
+     // }
+
+     // Latest Approch
+     owl.addEventListener('click',function(){
+          // alert('Clicked On Owl')
+     })
+     // attachEvent
+     // Jquery
+
+     owl.addEventListener('click',function(e){
+     //     console.log(e)
+     },false)
+
+     // type, timestamp, defaultPrevented
+     // target, toElement, srcElement, currentTarget,
+     // clientX, clientY, screenX, screenY
+     // altkey, ctrlkey, shiftkey, keyCode
+
+     // Event Propagation => when both parent and child of the parent are targeted 
+     //  false => bubble Event lower to Higher , true => captureing 
+     // event higher to lower
+
+     
+     let ul = document.querySelector('ul')
+     ul.addEventListener('click',function(e){
+     //     console.log('clicked On Ul')
+         
+     },false) // Bubbleing => 1st child got targeted
+     owl.addEventListener('click',function(e){
+     //     console.log('clicked On Owl')
+         e.stopPropagation()
+     //     console.log(e.timeStamp)
+     },false)
+     /*
+          clicked On Ul
+          clicked On Ul
+          clicked On Ul
+          clicked On Owl 
+          clicked On Ul 
+     */ 
+    // capturing Event
+    owl.addEventListener('click',function(e){
+     //     console.log('clicked On Owl')
+     },true)
+    ul.addEventListener('click',function(e){
+     //     console.log('clicked On Ul')
+     },true) // capturing => !st parent got targeted
+     /*
+          clicked On Ul
+          clicked On Ul
+          clicked On Ul
+          clicked On Owl
+          Note : to stop this Propagation we have stopPropagation
+          */
+
+         
+</script>
+</html>

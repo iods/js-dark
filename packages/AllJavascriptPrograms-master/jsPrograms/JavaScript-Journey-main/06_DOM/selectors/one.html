@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>DOM</title>
+     <style>
+          body{
+               background-color: #242524;
+               color: #fff;
+          }
+          code{
+               background-color: black;
+               font-family: 'Courier New', Courier, monospace;
+               font-size: 20px;
+               font-weight: 500;
+               border-radius: 5px ;
+               padding: 3px;
+          }
+          .mainul li{
+               margin: 25px;
+          }
+          .gebiSelector{
+               background-color: #202020;
+               border-radius: 10px;
+               padding: 20px;
+          }
+          .gebiSelector li{
+               margin: 5px;
+          }
+     </style>
+</head>
+<body>
+     <div class="main" id="mainDiv">
+          <h1 id="title" class="dom">DOM <span style="display: none;">test text</span></h1>
+          <p>Dom Process (How to Target Elements through JS)</p>
+          <!-- To Target any Element in web 1st we need to target
+          the document
+          -->
+          <ul class="mainul">
+               <li>
+                    Target Document
+               </li>
+               <li >
+                    
+                    <h3>Use A Selector to Target </h3>
+                           
+                              <ul class="gebiSelector">
+                                   <p>getElementById :</p>
+                                   <li>can target id by using .id Notation</li>
+                                   <li>can target className by using .className Notation</li>
+                                   <li>can target getAttribute by using .getAttribute('attribute Name ex(Id)') Notation</li>
+                                   <li>can target setAttribute by using .setAttribute('attribute Name','what you change ') Notation</li>
+                                   <li>we can give access to this by a varible like <code>cosnt title = document.getElementById</code>
+                                   Now we can access all the attribute through variabel title.
+                                   </li>
+                                   <li>Accessing Attributes Example 
+                                        <code>title.style.padding = '5px'</code>
+                                        As same as u can easily maipulate style by JS 
+                                   </li>
+                                   <li>
+                                        <p style="line-height: 20px;">
+                                             innerText => Displays the content on window.(Here window means your Browser Tab).
+                                             <br> 
+                                             innerContent => It also displays the content on window also shows the hidden Content too
+                                             <br> 
+                                             innerHTML => It also displays the content but also shows the tags that are in the Element.
+                                             <br>
+                                             Example : <br>
+                                                       <code style="margin-top: 10px; padding: 2px;">
+                                                            let container = document.getElementById('title')
+                                                            <br>
+                                                            container.innerText
+                                                            => Output :'DOM' <br>
+                                                            container.textContent
+                                                            => Output : 'DOM test text' <br>
+                                                            container.innerHTML
+                                                            => Output : 'DOM "span style="display: none;" test text /span"'
+                                                       </code>
+                                        </p>
+                                   </li>
+                              </ul>
+                         </li>
+                    <li class="gebiSelector">getElementsByClassName
+                         <ul>
+                               <code > Same As getElementsById   
+                                  <br> var elements = document.getElementsByClassName('exampleClass');     
+                              </code>
+                         </ul>
+                    </li>
+                    <li class="gebiSelector">getElementsByTagName
+                         <ul>
+                              <code > Same As getElementsById   
+                                 <br> var elements = document.getElementsByTagName('p');   
+                             </code>
+                        </ul>
+                    </li>
+                    <li class="gebiSelector">querySelector
+                         <ul>
+                              <code > Same As getElementsById   
+                                 <br> var elements = document.querySelector('.exampleClass' / '#expampleId');     
+                             </code>
+                        </ul>
+                    </li>
+                    <li class="gebiSelector">querySelectorAll
+                         <ul>
+                              <code > Same As getElementsById   
+                                 <br> 
+                                 var elements = document.querySelectorAll('.exampleClass'/'#example id');   
+                             </code>
+                        </ul>
+                    </li>
+                    <li class="gebiSelector">getElementsByName
+                         <ul>
+                              <code > Same As getElementsById   
+                                 <br> var elements = document.getElementsByName('exampleName');
+                             </code>
+                        </ul>
+                    </li>
+               </li>
+          </ul>
+     </div>
+</body>
+</html>

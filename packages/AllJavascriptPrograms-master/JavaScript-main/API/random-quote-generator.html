@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@500&display=swap" rel="stylesheet"> 
+    <style>
+        body{
+            background-color: pink;
+            font-family: 'Recursive', sans-serif;
+            text-align: center;
+        }
+        .container{
+            width: 525px;
+            height: 400px;
+            background-color: white;
+            position: relative;
+            left: 510px;
+            top: 125px;
+        }
+        #fetch-btn{
+            position: absolute;
+            top: 300px;
+            right: 200px;
+            font-size: 15px;
+        }
+        hr{
+            border-top: 1px solid gray;
+            width: 100%;
+            position: absolute;
+        }
+        button{
+            padding: 10px 20px;
+            color: pink;
+            background-color: rgb(52, 52, 107);
+            border: none;
+            border-radius: 10px;
+        }
+        #quote{
+            padding: 100px 60px 50px;
+            font-size: 25px;
+            font-family: 'Recursive', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Quote Generator</h1>
+    <div class="container">
+        <div id="quote">
+            The moments of happiness we enjoy take us by surprise.
+        </div>
+
+        <hr>
+
+        <div class="btn-socio">
+            <button id="fetch-btn">New Quote</button>
+        </div>
+    </div>
+
+    <script src="./random-quote-generator.js"></script>
+</body>
+</html>
