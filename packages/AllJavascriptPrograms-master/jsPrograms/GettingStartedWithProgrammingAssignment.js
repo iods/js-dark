@@ -1,1 +1,0 @@
-console.log('"Learning never exhausts the mind.”'); 
