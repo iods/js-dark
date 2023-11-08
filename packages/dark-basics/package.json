@@ -1,0 +1,16 @@
+{
+  "name": "@iods/darkjs-basics",
+  "version": "0.1.0",
+  "description": "A lightweight, full-stack Javascript learning library.",
+  "repository": "iods/js-dark",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev",
+    "url": "https://ryemiller.io"
+  },
+  "devDependencies": {
+    "@iods/darkjs": "^0.1.5"
+  }
+}

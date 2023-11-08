@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods in JS</title>
+</head>
+
+<body>
+    <script>
+        const sentence = 'The quick brown dog jumps over the lazy dog.';
+        const str1 = 'Hello';
+        const str2 = 'WORLD';
+        const str3 = '     WORLD        ';
+        console.log("at method -> " + sentence.at(16));
+        console.log("charAt method -> " + sentence.charAt(4));
+        console.log("indexOf method -> " + sentence.indexOf("over"));
+        console.log("PadEnd method -> " + str1.padEnd(25, "."));
+        console.log("padStart method -> " + str1.padStart(10));
+        console.log("concat method -> " + str1.concat(' ', str2));
+        console.log("repeat method -> " + str1.repeat(3));
+        console.log("replace method -> " + sentence.replace("dog", "fox"));
+        console.log("replaceAll method -> " + sentence.replaceAll("dog", "fox"));
+        console.log("slice method -> " + sentence.slice(13, 30));
+        console.log("split method -> " + sentence.split(""));
+        console.log("substring method -> " + sentence.substring(4));
+        console.log("substring method -> " + sentence.substring(4,13));
+        console.log("toLowerCase method -> " + str2.toLowerCase());
+        console.log("toUpperCase method -> " + str1.toUpperCase());
+        console.log(str3);
+        console.log("trim method -> " + str3.trim());
+        console.log("trimStart method -> " + str3.trimStart());
+        console.log("trimEnd method -> " + str3.trimEnd());
+
+
+    </script>
+</body>
+
+</html>

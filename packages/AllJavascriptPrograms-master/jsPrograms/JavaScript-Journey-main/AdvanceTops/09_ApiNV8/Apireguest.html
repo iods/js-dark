@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>API Requests</title>
+</head>
+<body style="background-color: #212121; color: azure;">
+     <p>0	UNSENT	Client has been created. open() not called yet.</p>
+     <p>1	OPENED	open() has been called.</p>
+     <p>2	HEADERS_RECEIVED	send() has been called, and headers and status are available.</p>
+     <p>3	LOADING	Downloading; responseText holds partial data.</p>
+     <p>4	DONE	The operation is complete.</p>
+</body>
+<script>
+     let url = 'https://api.github.com/users/Bhanuprathyush123'
+     let xmlHReq =  new XMLHttpRequest()
+     // we need to get the Request from the url so we use open
+     xmlHReq.open('GET',url)
+     xmlHReq.onreadystatechange = function () {
+          console.log(xmlHReq.readyState);
+          if (xmlHReq.readyState === 4) {
+               let data = JSON.parse(this.responseText)
+               console.log(data);
+               console.log(data.login);
+          }
+     }
+     xmlHReq.send()
+</script>
+</html>

@@ -9,8 +9,5 @@
     "name": "Rye Miller",
     "email": "rye@drkstr.dev",
     "url": "https://ryemiller.io"
-  },
-  "devDependencies": {
-    "@iods/dark-cli": "^0.1.0"
   }
 }

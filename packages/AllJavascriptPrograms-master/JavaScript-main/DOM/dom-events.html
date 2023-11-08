@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model in JavaScript</title>
+    <style>
+        div{
+            padding: 10px;
+            margin: 20px;
+        }
+        #event1{
+            border: 1px solid red;
+            background-color: red;
+        }
+        #event2{
+            border: 1px solid green;
+            background-color: green;
+        }
+        #event3{
+            border: 1px solid yellow;
+            background-color: yellow;
+        }
+        #cap1{
+            border: 1px solid black;
+            background-color: black;
+            color: white;
+        }
+        #cap2{
+            border: 1px solid gold;
+            background-color: gold;
+        }
+        #cap3{
+            border: 1px solid white;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h2>Event Bubbling</h2>
+    <div id="event1">
+        EVENT-1
+        <div id="event2">
+            EVENT-2
+            <div id="event3">
+                EVENT-3
+            </div>
+        </div>
+    </div>
+
+    <h2>Event Capturing</h2>
+    <div id="cap1">
+        EVENT-CAPTURING-1
+        <div id="cap2">
+            EVENT-CAPTURING-2
+            <div id="cap3">
+                EVENT-CAPTURING-3
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const element = document.getElementById('division');
+        element.textContent='Document Object Model'; // With textContent property we can change the content written in html
+        element.innerHTML="Document Object Model changed using innerHTML" //also we can change the content written in html using innerHTML
+
+        /* 1] Event Bubbling :- 
+            - Event Bubbling is a concept in the DOM (Document Object Model). It happens when an element receives an event, and that event bubbles up (or you can say is transmitted or propagated) to its parent and ancestor elements in the DOM tree until it gets to the root element.
+            - This is the default behavior of events on elements unless you stop the propagation.
+
+            lets look at above Example :- 
+            -The event-3 is a child of the event-2, which in turn is a child of the event-1.
+            -When you click the event-3, you can think of it like you're also clicking the event-2 and event-1. This is because the event-3 is a child of the event-2.
+            -An event doesn't stop at the direct element that receives it. The event bubbles up to its ancestors, until it gets to the root element. 
+
+            -The "Event Bubbling" behavior makes it possible for you to handle an event in a parent element instead of the actual element that received the event.
+            -The pattern of handling an event on an ancestor element is called Event Delegation.
+
+            -What happens on the alert when you click on the red background/event1 -> Event-1 was clicked
+            -What happens on the alert when you click on the green background/event2 -> 
+                    -Event-2 was clicked
+                    -Event-1 was clicked
+            -What happens on the alert when you click on the yellow background
+                    -Event-3 was clicked
+                    -Event-2 was clicked
+                    -Event-1 was clicked
+
+            // How to Stop Event Bubbling?
+            -To prevent event bubbling, you use the "stopPropagation" method of the event object.
+            -When handling events, an event object is passed to the handling function.
+
+
+
+            2] Event Capturing :- 
+            -In event capturing, an event propagates from the outermost element to the target element.
+            -It is the opposite of event bubbling, where events propagate outwards from the target to the outer elements. 
+            -Capturing happens before bubbling.
+        */
+
+
+    </script>
+    <script src="./dom-events.js"></script>
+</body>
+</html>
