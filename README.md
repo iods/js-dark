@@ -1,18 +1,18 @@
 <h1 align="center">Dark JS</h1>
 
-A lightweight, full-stack JavaScript framework and documentation library on learning to keep the lights on.
+A lightweight, full-stack JavaScript project and documentation library on learning the languages and their defaults.
 
-Goal: Write elegant, fast, and ubiquitous Javascript.
+Goal: Write elegant, fast, and ubiquitous Javascript and React.
 
 Facts
 -----
 * Version: 0.1.5
 * [Repository on Github](https://github.com/iods/js-dark)
-* [@iods/darkjs npm Package](https://www.npmjs.com/package/@iods/darkjs)
+
 
 Getting Started
 ---------------
-Instructions on how to download, install, and configure the framework and included packages.
+Instructions on how to download, install, and configure the project and included packages.
 
 ### Installation
 

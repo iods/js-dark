@@ -1,0 +1,13 @@
+{
+  "name": "@iods/darkjs-math",
+  "version": "0.1.0",
+  "description": "Basic math and geometry toolkit for Javascript.",
+  "repository": "iods/js-dark",
+  "license": "MIT",
+  "private": false,
+  "author": {
+    "name": "Rye Miller",
+    "email": "rye@drkstr.dev",
+    "url": "https://ryemiller.io"
+  }
+}
